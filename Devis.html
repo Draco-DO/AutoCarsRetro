@@ -42,68 +42,56 @@
   <main>
 
     <div class="container">
-      <form id="devis-form" action="envoyer_devis.php" method="post">
-          <div class="form-group">
-              <label for="last-name">Nom :</label>
-              <input type="text" id="last-name" name="last-name" required>
-          </div>
-          <div class="form-group">
-              <label for="first-name">Prénom :</label>
-              <input type="text" id="first-name" name="first-name" required>
-          </div>
-          <div class="form-group">
-              <label for="compagny">Société :</label>
-              <input type="text" id="compagny" name="compagny">
-          </div>
-          <div class="form-group">
-              <label for="email">Email :</label>
-              <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-              <label for="phone">Téléphone :</label>
-              <input type="tel" id="phone" name="phone" required>
-          </div>
-          <label>Véhicule(s) concerné(s) :</label>
+        <h2>Demande de Devis</h2>
+        <form action="https://formspree.io/f/{votre-ID}" method="POST" id="devis-form">
+            <div class="form-group">
+                <label for="last-name">Nom :</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="first-name">Prénom :</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="compagny">Société :</label>
+                <input type="text" id="compagny" name="compagny">
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <label>Véhicule(s) concerné(s) :</label>
             <div class="checkbox-group">
                 <label><input type="checkbox" name="services[]" value="Mercedes Benz O 3500"> Mercedes Benz O 3500</label>
                 <label><input type="checkbox" name="services[]" value="Setra Kässbohrer 215 HD"> Setra Kässbohrer 215 HD</label>
-                <label><input type="checkbox" name="services[]" value="Setra Kässbohrer 215 HD"> Mercedes O321 H</label>
+                <label><input type="checkbox" name="services[]" value="Mercedes O321 H"> Mercedes O321 H</label>
                 <label><input type="checkbox" name="services[]" value="Citroën ID 19"> Citroën ID 19</label>
                 <label><input type="checkbox" name="services[]" value="Citroën D Super"> Citroën D Super</label>
                 <label><input type="checkbox" name="services[]" value="Mc Cormick Farmall D 212"> Mc Cormick Farmall D 212</label>
                 <label><input type="checkbox" name="services[]" value="Fendt F 24"> Fendt F 24</label>
             </div>
-         <div class="form-group">
+            <div class="form-group">
+                <label for="message">Détails du Projet :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
                 <button type="submit" class="submit-btn">Envoyer la Demande</button>
             </div>
         </form>
     </div>
 
-    <!-- Message de confirmation -->
-    <div id="confirmation-message" style="display: none; color: green;">
-        Votre demande a bien été envoyée !
-    </div>
-
-    <!-- Script pour la validation du formulaire et afficher un message -->
     <script>
-        document.getElementById('devis-form').addEventListener('submit', function (event) {
-            var firstname = document.getElementById('first-name').value;
-            var lastname = document.getElementById('last-name').value;
-            var email = document.getElementById('email').value;
-            var phone = document.getElementById('phone').value;
-            var message = document.getElementById('message').value;
+        document.getElementById('devis-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche l'envoi immédiat
 
-            if (firstname === "" || lastname === "" || email === "" || phone === "" || message === "") {
-                alert("Veuillez remplir tous les champs obligatoires.");
-                event.preventDefault();  // Empêche l'envoi du formulaire si des champs sont vides
-            }
+            // Simuler un message après l'envoi
+            alert("Votre demande a été envoyée avec succès.");
+            this.submit(); // Envoie réellement le formulaire
         });
-
-        // Affiche un message de confirmation si redirigé après soumission
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has('success')) {
-            document.getElementById('confirmation-message').style.display = 'block';
-        }
     </script>
 
   </main>
