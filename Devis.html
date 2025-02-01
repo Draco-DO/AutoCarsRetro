@@ -84,13 +84,26 @@
         </form>
     </div>
 
-    <script>
+     <script>
         document.getElementById('devis-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Empêche l'envoi immédiat
 
-            // Simuler un message après l'envoi
-            alert("Votre demande a été envoyée avec succès.");
-            this.submit(); // Envoie réellement le formulaire
+            // Effectue l'envoi du formulaire
+            fetch(this.action, {
+                method: this.method,
+                body: new FormData(this),
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    // Affiche un message de succès et redirige vers index.html
+                    alert("Votre demande a été envoyée avec succès.");
+                    window.location.href = "index.html"; // Redirection automatique
+                } else {
+                    alert("Il y a eu un problème avec votre demande.");
+                }
+            }).catch(error => {
+                alert("Erreur lors de l'envoi. Veuillez réessayer.");
+            });
         });
     </script>
 
