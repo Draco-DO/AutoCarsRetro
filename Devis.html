@@ -78,7 +78,7 @@
               <textarea id="message" name="message" rows="5" required></textarea>
           </div>
           <div class="form-group">
-              <button type="submit" class="submit-btn">Envoyer la Demande</button>
+              <button type="submit" class="submit-btn" method="POST">Envoyer la Demande</button>
           </div>
       </form>
   </div>
@@ -98,6 +98,13 @@
               event.preventDefault();  // Empêche l'envoi du formulaire
           }
       });
+
+        // Vérifie si l'URL contient le paramètre 'success'
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('success')) {
+            document.getElementById('message').style.display = 'block';
+        }
+        
     </script>
 
 
