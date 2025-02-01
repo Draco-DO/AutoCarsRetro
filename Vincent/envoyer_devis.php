@@ -13,7 +13,7 @@
 
 
         // Destinataire et sujet de l'email
-        $to = "votre_email@exemple.com";  // Remplacez par votre adresse email
+        $to = "vincent92.raboisson@gmail.com";  // Remplacez par votre adresse email
         $subject = "Nouvelle demande de devis";
 
         // Contenu de l'email
