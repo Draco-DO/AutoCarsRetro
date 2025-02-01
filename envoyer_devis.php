@@ -36,4 +36,8 @@
             echo "Une erreur s'est produite lors de l'envoi de votre demande. Veuillez réessayer.";
         }
     }
+        // Redirection vers la page principale après exécution avec un paramètre success
+        header('Location: index.html?success=1');
+        exit();
+
 ?>
