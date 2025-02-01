@@ -548,7 +548,6 @@ h6{
   border: none; /* Supprime la bordure */
   border-radius: 5px; /* Arrondi les coins du bouton */
   cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
-  text-align: center;
 }
 
 /* Style lorsque le curseur survole le bouton */
