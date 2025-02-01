@@ -539,14 +539,18 @@ h6{
 .form-group textarea {
     resize: vertical;
 }
+
 .submit-btn {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px 20px; /* Remplissage à l'intérieur du bouton */
+  font-size: 16px; /* Taille de la police */
+  background-color: #1b5f30; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none; /* Supprime la bordure */
+  border-radius: 5px; /* Arrondi les coins du bouton */
+  cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
 }
+
+/* Style lorsque le curseur survole le bouton */
 .submit-btn:hover {
-    background-color: #218838;
+  background-color: skyblue; /* Nouvelle couleur de fond au survol */
 }
