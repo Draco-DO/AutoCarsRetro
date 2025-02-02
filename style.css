@@ -368,7 +368,7 @@ a {
   text-align: center; /* Centrage du texte */
   overflow: hidden; /* Pour cacher toute partie de l'image qui dépasse du cadre */
   position: relative; /* Utile si besoin de superposition */
-  padding: 0 5%; /* Ajoute une marge intérieure de 20px à gauche et à droite */
+  padding: 0 2.5%; /* Ajoute une marge intérieure de 20px à gauche et à droite */
 }
 
 .bouton4 {
@@ -406,7 +406,7 @@ h6{
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
-  grid-gap: 50px; /* Espacement entre les éléments */
+  grid-gap: 5%; /* Espacement entre les éléments */
   width: 100%; /* Largeur de la galerie */
   margin: 0 auto; /* Centrage horizontal de la galerie */
    flex-wrap: wrap; /* Pour permettre le wrapping des colonnes */
@@ -473,8 +473,8 @@ h6{
   flex-direction: column;
   align-items: center; /* Centre les enfants horizontalement */
   background-color: #faf9eb;
-  padding-bottom: 10px;
-  padding-top: 20px;
+  padding-bottom: 5%;
+  padding-top: 10%;
   height: 90%;
 }
 
