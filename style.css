@@ -431,7 +431,7 @@ h6{
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
-  width: 50%; /* Prendre toute la largeur disponible */
+  width: 60%; /* Prendre toute la largeur disponible */
 }
 
 .bouton5 {
