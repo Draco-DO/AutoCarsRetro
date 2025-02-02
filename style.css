@@ -14,7 +14,6 @@ body, ul {
 .Logo{
   display: flex;
   align-items: center;  /* Aligne verticalement */
-  
   padding: 10px;
 
 }
@@ -29,7 +28,7 @@ body, ul {
     font-family: Playfair Display;
     font-weight: normal;
     font-size: 40px;
-    left: 10%;
+    left: 15%;
 }
 
 section {
