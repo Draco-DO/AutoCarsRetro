@@ -28,6 +28,7 @@ body, ul {
     font-family: Playfair Display;
     font-weight: normal;
     font-size: 40px;
+    left:15%;
 }
 
 section {
@@ -420,7 +421,7 @@ h6{
 }
 
 .product img {
-  width: 100%; /* Largeur des images */
+  width: 40%; /* Largeur des images */
   height: auto; /* Hauteur des images */
   object-fit: contain; /* Ajustement de l'image à l'intérieur du cadre */
 }
@@ -478,7 +479,7 @@ h6{
 }
 
 .product2 img {
-  width: 50%; /* Largeur des images */
+  width: 40%; /* Largeur des images */
   height: auto; /* Hauteur des images */
   object-fit: cover; /* Ajustement de l'image à l'intérieur du cadre */
 }
