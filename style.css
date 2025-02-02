@@ -302,8 +302,8 @@ a {
 }
 
 .image-responsive {
-  width: 100%; /* Pour remplir complètement la largeur du cadre */
-  height: auto; /* Pour conserver les proportions de l'image */
+  width: auto; /* Pour remplir complètement la largeur du cadre */
+  height: 100%; /* Pour conserver les proportions de l'image */
   object-fit: cover; /* Pour adapter l'image et couper ce qui dépasse en hauteur */
 }
 
