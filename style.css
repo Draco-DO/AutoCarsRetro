@@ -282,7 +282,7 @@ a {
 .evenements {
   display: flex; 
   width: 100%;
-  height: auto;
+  height: 500px;
   text-align: center;
   background-color: #0D2123;
   color: white;
@@ -290,7 +290,7 @@ a {
 
 .Colonne2, .Colonne2-2 {
   width: 33.3%; /* Largeur du cadre */
-  height: auto; /* Hauteur du cadre */
+  height: 100%; /* Hauteur du cadre */
   display: flex; /* Active Flexbox sur chaque colonne */
   flex-direction: column; /* Aligne les éléments de haut en bas */
   justify-content: center; /* Centrage vertical */
@@ -302,8 +302,8 @@ a {
 }
 
 .image-responsive {
-  width: 33.3%; /* Pour remplir complètement la largeur du cadre */
-  height: auto; /* Pour conserver les proportions de l'image */
+  width: 100%; /* Pour remplir complètement la largeur du cadre */
+  height: 100%; /* Pour conserver les proportions de l'image */
   object-fit: cover; /* Pour adapter l'image et couper ce qui dépasse en hauteur */
 }
 
