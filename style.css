@@ -153,7 +153,7 @@ a {
   background-size: cover; /* L'image couvre tout le bouton */
   background-position: center; /* Centre l'image */
   border: none; /* Enlève la bordure */
-  width: 80%; /* Ajustez selon vos besoins */
+  width: 100%; /* Ajustez selon vos besoins */
   height: 100px; /* Ajustez selon vos besoins */
   color: white; /* Couleur du texte */
   font-size: 30px; /* Taille du texte */
