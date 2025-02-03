@@ -407,6 +407,7 @@ h6{
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
   width: 100%; /* Prendre toute la largeur disponible */
+  padding-bottom:2.5%;
 }
 
 .bouton5 {
