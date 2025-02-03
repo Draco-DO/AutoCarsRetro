@@ -365,7 +365,7 @@ a {
 h5 {
   text-align: center;
   font-family: Playfair Display;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color:black;
 }
 
@@ -380,11 +380,63 @@ h6{
 
 
 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+  grid-gap: 2.5%; /* Espacement entre les éléments */
+  width: 100%; /* Largeur de la galerie */
+  margin: 0 auto; /* Centrage horizontal de la galerie */
+}
+
+.product {
+  background-color: #faf9eb;
+  padding: 2%;
+  height: width;
+}
+
+.product img {
+  width: 100%; /* Largeur des images */
+  height: 20rem; /* Hauteur des images */
+  object-fit: contain; /* Ajustement de l'image à l'intérieur du cadre */
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column; /* Les éléments (texte, bouton) empilés verticalement */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  text-align: center; /* Centre le texte à l'intérieur */
+  width: 100%; /* Prendre toute la largeur disponible */
+}
+
+.bouton5 {
+  padding: 10px 20px; /* Remplissage à l'intérieur du bouton */
+  font-size: 16px; /* Taille de la police */
+  background-color: #1b5f30; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none; /* Supprime la bordure */
+  border-radius: 5px; /* Arrondi les coins du bouton */
+  cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
+}
+
+/* Style lorsque le curseur survole le bouton */
+.bouton5:hover {
+  background-color: skyblue; /* Nouvelle couleur de fond au survol */
+}
+
+
+
+
+
+/*PAGE Clients*/
+
+
+
 .gallery2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Deux colonnes égales */
-  grid-gap: 2.5%; /* Espacement entre les éléments */
-  width: 100%; /* Largeur de la galerie */
+  grid-gap: 5%; /* Espacement entre les éléments */
+  width: 80%; /* Largeur de la galerie */
   margin: 0 auto; /* Centrage horizontal de la galerie */
    flex-wrap: wrap; /* Pour permettre le wrapping des colonnes */
 }
@@ -395,13 +447,13 @@ h6{
   flex-direction: column;
   align-items: center; /* Centre les enfants horizontalement */
   background-color: #faf9eb;
-  padding-bottom: 5%;
-  padding-top: 10%;
+  padding-bottom: 10px;
+  padding-top: 20px;
   height: 90%;
 }
 
 .product2 img {
-  width: 40%; /* Largeur des images */
+  width: 50%; /* Largeur des images */
   height: auto; /* Hauteur des images */
   object-fit: cover; /* Ajustement de l'image à l'intérieur du cadre */
 }
@@ -425,53 +477,49 @@ h6{
           width: 50%;
           margin: 0 auto;
           background-color: white;
-          padding: 1.5rem;
-          box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.1);
-          margin-top: 3rem;
-          border-radius: 0.5rem;
+          padding: 20px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          margin-top: 50px;
+          border-radius: 8px;
 
     }
         
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 .checkbox-group {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 .checkbox-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
 }
 .form-group input, 
 .form-group textarea {
     width: 100%; /* Ajustez cette valeur si vous souhaitez une taille différente */
     padding: 10px;
-    border: 0.1rem solid #ccc;
-    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box; /* Assure que le padding soit inclus dans la taille totale de l'élément */
 }
 .form-group textarea {
     resize: vertical;
 }
-
 .submit-btn {
-  padding: 0.5rem 1.5rem; /* Remplissage à l'intérieur du bouton */
-  font-size: 1rem; /* Taille de la police */
-  background-color: #1b5f30; /* Couleur de fond du bouton */
-  color: white; /* Couleur du texte du bouton */
-  border: none; /* Supprime la bordure */
-  border-radius: 0.5rem; /* Arrondi les coins du bouton */
-  cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-
-/* Style lorsque le curseur survole le bouton */
 .submit-btn:hover {
-  background-color: skyblue; /* Nouvelle couleur de fond au survol */
+    background-color: #218838;
 }
