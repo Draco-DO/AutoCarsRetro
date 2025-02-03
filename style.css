@@ -10,8 +10,8 @@ body, ul {
   margin: 0;
 }
 
-.footer {
-  padding-top:1.5rem;
+footer {
+  padding-top:15rem;
 }
 
 .Logo{
@@ -25,13 +25,12 @@ body, ul {
     height: auto;
 }
 
-
 .titre{
     position: absolute;
     font-family: Playfair Display;
     font-weight: normal;
     font-size: 2.5rem;
-    left:15%;
+    left:42%;
 }
 
 section {
@@ -147,7 +146,6 @@ a {
 }
 
 
-
 /* Bouton stylé */
 .bouton3 {
   position: relative; /* Nécessaire pour positionner ::before */
@@ -156,7 +154,7 @@ a {
   background-position: center; /* Centre l'image */
   border: none; /* Enlève la bordure */
   width: 100%; /* Ajustez selon vos besoins */
-  height: 100px; /* Ajustez selon vos besoins */
+  height: 7rem; /* Ajustez selon vos besoins */
   color: white; /* Couleur du texte */
   font-size: 2rem; /* Taille du texte */
   font-family: ARIAL;
@@ -194,6 +192,7 @@ a {
   background-position: inherit;
 }
 
+
 .collectionneur{
   height: 25rem;
   width: 100%; /* Largeur du cadre */
@@ -229,24 +228,25 @@ a {
   justify-content: center; /* Centrage horizontal */
   text-align: center;
   height: width;
-  width: auto;
+  width: 100%;
 }
 
 .context2{
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .context3{
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .vehicules {
   width: 100%;
-  height: auto;
+  height: 18rem;
   text-align: center;
 }
+
 
 /*.propos {
   display: flex;
@@ -282,6 +282,7 @@ a {
   height: auto; 
  }*/
 
+
 .evenements {
   display: flex; 
   width: 100%;
@@ -291,17 +292,15 @@ a {
   color: white;
 }
 
+
 .Colonne2, .Colonne2-2 {
   width: 33.3%; /* Largeur du cadre */
   height: 100%; /* Hauteur du cadre */
-  display: flex; /* Active Flexbox sur chaque colonne */
-  flex-direction: column; /* Aligne les éléments de haut en bas */
   justify-content: center; /* Centrage vertical */
   align-items: center; /* Centrage horizontal */
   text-align: center; /* Centrage du texte */
-  overflow: hidden; /* Pour cacher toute partie de l'image qui dépasse du cadre */
-  position: relative; /* Utile si besoin de superposition */
-  padding: 0 4rem; /* Ajoute une marge intérieure de 20px à gauche et à droite */
+  padding: 0 1rem; /* Ajoute une marge intérieure de 20px à gauche et à droite */
+  padding-top: 10%;
 }
 
 .image-responsive {
@@ -348,32 +347,6 @@ a {
 
 
 
-.Colonne3, .Colonne3-2 {
-  width: 33.3%; /* Largeur du cadre */
-  height: width; /* Hauteur du cadre */
-  display: flex; /* Active Flexbox sur chaque colonne */
-  flex-direction: column; /* Aligne les éléments de haut en bas */
-  justify-content: center; /* Centrage vertical */
-  align-items: center; /* Centrage horizontal */
-  text-align: center; /* Centrage du texte */
-  overflow: hidden; /* Pour cacher toute partie de l'image qui dépasse du cadre */
-  position: relative; /* Utile si besoin de superposition */
-  background-color: #faf9eb;
-}
-
-.Colonne3-1 {
-  width: 33.3%; /* Largeur du cadre */
-  height: 100%; /* Hauteur du cadre */
-  display: flex; /* Active Flexbox sur chaque colonne */
-  flex-direction: column; /* Aligne les éléments de haut en bas */
-  justify-content: center; /* Centrage vertical */
-  align-items: center; /* Centrage horizontal */
-  text-align: center; /* Centrage du texte */
-  overflow: hidden; /* Pour cacher toute partie de l'image qui dépasse du cadre */
-  position: relative; /* Utile si besoin de superposition */
-  padding: 0 2.5%; /* Ajoute une marge intérieure de 20px à gauche et à droite */
-}
-
 .bouton4 {
   padding: 0.5rem 1rem; /* Remplissage à l'intérieur du bouton */
   font-size: 1rem; /* Taille de la police */
@@ -392,7 +365,7 @@ a {
 h5 {
   text-align: center;
   font-family: Playfair Display;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color:black;
 }
 
@@ -404,60 +377,6 @@ h6{
   color: black;
 }
 
-
-
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
-  grid-gap: 2.5%; /* Espacement entre les éléments */
-  width: 100%; /* Largeur de la galerie */
-  margin: 0 auto; /* Centrage horizontal de la galerie */
-   flex-wrap: wrap; /* Pour permettre le wrapping des colonnes */
-}
-
-.product {
-  display: flex;
-  flex-direction: row;
-  background-color: #faf9eb;
-  padding: 2.5%;
-  height: width;
-}
-
-.product img {
-  width: 40%; /* Largeur des images */
-  height: auto; /* Hauteur des images */
-  object-fit: contain; /* Ajustement de l'image à l'intérieur du cadre */
-}
-
-.product-description {
-  display: flex;
-  flex-direction: column; /* Les éléments (texte, bouton) empilés verticalement */
-  justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center; /* Centre les éléments verticalement */
-  text-align: center; /* Centre le texte à l'intérieur */
-  width: 60%; /* Prendre toute la largeur disponible */
-}
-
-.bouton5 {
-  padding: 0.5rem 1.5rem; /* Remplissage à l'intérieur du bouton */
-  font-size: 1rem; /* Taille de la police */
-  background-color: #1b5f30; /* Couleur de fond du bouton */
-  color: white; /* Couleur du texte du bouton */
-  border: none; /* Supprime la bordure */
-  border-radius: 0.5rem; /* Arrondi les coins du bouton */
-  cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
-}
-
-/* Style lorsque le curseur survole le bouton */
-.bouton5:hover {
-  background-color: skyblue; /* Nouvelle couleur de fond au survol */
-}
-
-
-
-
-
-/*PAGE Clients*/
 
 
 
