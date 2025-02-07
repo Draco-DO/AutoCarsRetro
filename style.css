@@ -508,10 +508,6 @@ h6{
 }
 .submit-btn {
   margin-top: 50px;
-  padding: 1.5rem 1.5rem; /* Remplissage à l'intérieur du bouton */
-  padding: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
   font-size: 1rem; /* Taille de la police */
   background-color: #0b2f5b; /* Couleur de fond du bouton */
   color: white; /* Couleur du texte du bouton */
