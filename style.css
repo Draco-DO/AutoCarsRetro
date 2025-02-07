@@ -30,7 +30,18 @@ footer {
     font-family: Playfair Display;
     font-weight: normal;
     font-size: 2.5rem;
-    left:30%;
+    left:35%;
+    top: -20px;
+}
+
+
+h7{
+    position: absolute;
+    font-family: Playfair Display;
+    font-weight: normal;
+    font-size: 1rem;
+    left:46%;
+    top: 50px;
 }
 
 section {
@@ -79,7 +90,9 @@ p{
 
 /* Style de base pour la barre de menu */
 .menu {
+  margin-top: 10px;
   background-color: #faf9eb; /* Couleur de fond de la barre */
+  height: 50px;
 }
 
 .menu ul {
@@ -125,18 +138,22 @@ p{
 }
 
 .bouton1, .bouton2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 0.5rem 1.5rem; /* Remplissage à l'intérieur du bouton */
-  font-size: 1rem; /* Taille de la police */
-  background-color: #5b5447; /* Couleur de fond du bouton */
+  font-size: 2rem; /* Taille de la police */
+  background-color: #0b2f5b; /* Couleur de fond du bouton */
   color: white; /* Couleur du texte du bouton */
-  border: none; /* Supprime la bordure */
-  border-radius: 0.5rem; /* Arrondi les coins du bouton */
+  border-color: black;
+  border-radius: 0.25rem; /* Arrondi les coins du bouton */
   cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
+  padding: 5rem;
 }
 
 /* Style lorsque le curseur survole le bouton */
 .bouton1:hover, .bouton2:hover {
-  background-color: black; /* Nouvelle couleur de fond au survol */
+  background-color: white; /* Nouvelle couleur de fond au survol */
+  color: black;
 }
 
 /* Styles pour centrer le bouton dans son conteneur */
@@ -146,50 +163,25 @@ a {
 }
 
 
-/* Bouton stylé */
+
+
 .bouton3 {
-  position: relative; /* Nécessaire pour positionner ::before */
-  background-image: url('images/header.jpg'); /* Image de fond */
-  background-size: cover; /* L'image couvre tout le bouton */
-  background-position: center; /* Centre l'image */
-  border: none; /* Enlève la bordure */
-  width: 100%; /* Ajustez selon vos besoins */
-  height: 7rem; /* Ajustez selon vos besoins */
-  color: white; /* Couleur du texte */
-  font-size: 2rem; /* Taille du texte */
-  font-family: ARIAL;
-  font-weight: normal;
-  cursor: pointer; /* Indique que c'est cliquable */
-  overflow: hidden; /* Empêche les débordements */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bouton3::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: inherit; /* Copie l'image de fond du bouton */
-  background-size: inherit;
-  background-position: inherit;
-  filter: blur(5px); /* Applique le flou */
-  z-index: 1; /* Le place derrière le texte */
-}
-
-.bouton3 span {
-  position: relative;
-  z-index: 2; /* Assure que le texte reste au-dessus du flou */
+  margin-top: 50px;
+  padding: 0.5rem 1.5rem; /* Remplissage à l'intérieur du bouton */
+  font-size: 1.5rem; /* Taille de la police */
+  background-color: #0b2f5b; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border-color: black;
+  border-radius: 0.25rem; /* Arrondi les coins du bouton */
+  cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
+  padding: 2.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .bouton3:hover {
-  color: #0D2123; /* Change la couleur du texte au survol */
-  background-image: blue; /* Copie l'image de fond du bouton */
-  background-size: inherit;
-  background-position: inherit;
+  background-color: white; /* Nouvelle couleur de fond au survol */
+  color: black;
 }
 
 
@@ -223,6 +215,7 @@ a {
 }
 
 .context {
+    margin-top: 55px;
   display: flex; /* Utilisation de Flexbox */
   align-items: center; /* Centrage vertical */
   justify-content: center; /* Centrage horizontal */
@@ -232,16 +225,15 @@ a {
 }
 
 .context2{
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  margin-top: 55px;
 }
 
 .context3{
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  margin-top: 55px;
 }
 
 .vehicules {
+  margin-top: 55px;
   width: 100%;
   height: 18rem;
   text-align: center;
@@ -381,17 +373,18 @@ h6{
 
 
 .gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
-  grid-gap: 2.5%; /* Espacement entre les éléments */
-  width: 100%; /* Largeur de la galerie */
-  margin: 0 auto; /* Centrage horizontal de la galerie */
+  display: inline-grid;
+  grid-template-columns: 1fr; /* Deux colonnes égales */
+  grid-gap: 1.5%; /* Espacement entre les éléments */
+  width: 100%;
 }
 
 .product {
-  background-color: #faf9eb;
+  background-color: #c3c7c3;
   padding: 2%;
   height: width;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+   display: grid;
 }
 
 .product img {
@@ -407,24 +400,24 @@ h6{
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
   width: 100%; /* Prendre toute la largeur disponible */
-  padding-bottom:2.5%;
 }
 
 .bouton5 {
   padding: 10px 20px; /* Remplissage à l'intérieur du bouton */
-  font-size: 16px; /* Taille de la police */
-  background-color: #1b5f30; /* Couleur de fond du bouton */
+  font-size: 1rem; /* Taille de la police */
+  background-color: #0b2f5b; /* Couleur de fond du bouton */
   color: white; /* Couleur du texte du bouton */
-  border: none; /* Supprime la bordure */
-  border-radius: 5px; /* Arrondi les coins du bouton */
+  border-color: black;
+  border-radius: 0.25rem; /* Arrondi les coins du bouton */
   cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
+  padding: 1.5rem;
 }
 
 /* Style lorsque le curseur survole le bouton */
 .bouton5:hover {
-  background-color: skyblue; /* Nouvelle couleur de fond au survol */
+  background-color: white; /* Nouvelle couleur de fond au survol */
+  color: black;
 }
-
 
 
 
@@ -439,7 +432,7 @@ h6{
   grid-gap: 5%; /* Espacement entre les éléments */
   width: 80%; /* Largeur de la galerie */
   margin: 0 auto; /* Centrage horizontal de la galerie */
-   flex-wrap: wrap; /* Pour permettre le wrapping des colonnes */
+  flex-wrap: wrap; /* Pour permettre le wrapping des colonnes */
 }
 
 .product2 {
@@ -514,13 +507,20 @@ h6{
     resize: vertical;
 }
 .submit-btn {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  margin-top: 50px;
+  padding: 1.5rem 1.5rem; /* Remplissage à l'intérieur du bouton */
+  padding: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 1rem; /* Taille de la police */
+  background-color: #0b2f5b; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border-color: black;
+  border-radius: 0.25rem; /* Arrondi les coins du bouton */
+  cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
+  width: 100%;
 }
 .submit-btn:hover {
-    background-color: #218838;
+      background-color: white; /* Nouvelle couleur de fond au survol */
+  color: black;
 }
