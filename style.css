@@ -377,6 +377,8 @@ h6{
   grid-template-columns: 1fr; /* Deux colonnes égales */
   grid-gap: 1.5%; /* Espacement entre les éléments */
   width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .product {
