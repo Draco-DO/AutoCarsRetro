@@ -148,6 +148,7 @@ p{
   border-radius: 0.25rem; /* Arrondi les coins du bouton */
   cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
   padding: 5rem;
+  width:90%;
 }
 
 /* Style lorsque le curseur survole le bouton */
@@ -177,6 +178,7 @@ a {
   padding: 2.5rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  width:80%;
 }
 
 .bouton3:hover {
