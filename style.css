@@ -376,7 +376,9 @@ h6{
   display: inline-grid;
   grid-template-columns: 1fr; /* Deux colonnes égales */
   grid-gap: 1.5%; /* Espacement entre les éléments */
-  width: 90%;
+  width: 95%;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center;
 }
 
 .product {
