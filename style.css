@@ -375,7 +375,8 @@ h6{
 
 
 .gallery {
-  display: inline-grid;
+  display: grid;
+  flex-wrap: wrap;
   grid-template-columns: 1fr; /* Deux colonnes égales */
   grid-gap: 1.5%; /* Espacement entre les éléments */
   width: 95%;
