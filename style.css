@@ -28,7 +28,7 @@ footer {
 .first-row{
   display: grid;
   flex-wrap: flex;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 20% 80%;
   flex-direction: column;
   width: 100%;
   justify-content: center; /* Centre les éléments horizontalement */
