@@ -14,18 +14,6 @@ footer {
   padding-top:15rem;
 }
 
-.title-section {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.subtitle {
-    font-size: 16px;
-    color: #666;
-}
-
 .image-responsive {
     max-width: 100%;
     height: auto;
@@ -52,6 +40,7 @@ footer {
 .first-row{
   display: grid;
   flex-wrap: wrap;
+  flex-direction: column;
   grid-template-columns: 10% 1fr; /* Deux colonnes égales */
   grid-gap: 1.5%; /* Espacement entre les éléments */
   width: 100%;
