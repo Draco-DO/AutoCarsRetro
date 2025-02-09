@@ -31,7 +31,7 @@ footer {
 
 .first-row{
   display: grid;
-  flex-wrap: wrap;
+  flex-wrap: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center; /* Centre les éléments horizontalement */
