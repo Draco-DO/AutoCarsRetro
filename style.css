@@ -22,7 +22,12 @@ footer {
 .Logo{
   align-items: center;  /* Aligne verticalement */
   padding: 0.5rem;
+}
 
+.Logo img {
+  width: 20%; /* Largeur des images */
+  height: auto; /* Hauteur des images */
+  object-fit: contain; /* Ajustement de l'image à l'intérieur du cadre */
 }
 
 .first-row{
