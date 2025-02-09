@@ -33,8 +33,6 @@ footer {
   display: grid;
   flex-wrap: wrap;
   flex-direction: column;
-  grid-template-columwidth: 10% 90%; /* Deux colonnes égales */
-  grid-gap: 1.5%; /* Espacement entre les éléments */
   width: 100%;
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center;
