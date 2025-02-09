@@ -41,6 +41,16 @@ footer {
   margin: 0 auto; /* Centrage horizontal de la galerie */
 }
 
+.titre{
+  display: grid;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center;
+  margin: 0 auto; /* Centrage horizontal de la galerie */
+}
+
 h7{
     text-align: center;
     font-family: Playfair Display;
