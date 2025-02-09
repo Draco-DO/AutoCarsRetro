@@ -24,14 +24,11 @@ footer {
   padding: 0.5rem;
 
 }
-.Logo img{
-    height: auto;
-    width: 10%;
-}
 
 .first-row{
   display: grid;
   flex-wrap: flex;
+  grid-template-columns: 10% 90%;
   flex-direction: column;
   width: 100%;
   justify-content: center; /* Centre les éléments horizontalement */
