@@ -51,6 +51,16 @@ footer {
     top: -20px;
 }
 
+.first-row{
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 10% 1fr; /* Deux colonnes égales */
+  grid-gap: 1.5%; /* Espacement entre les éléments */
+  width: 100%;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center;
+  margin: 0 auto; /* Centrage horizontal de la galerie */
+}
 
 h7{
     position: absolute;
