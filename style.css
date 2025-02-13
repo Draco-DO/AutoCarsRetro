@@ -422,6 +422,7 @@ h6{
   width: 100%; /* Prendre toute la largeur disponible */
   grid-template-rows: 15% 15% 15% 15% 20%; /* Deux colonnes égales */
   display: grid;
+  flex-wrap: wrap;
 }
 
 .row1, .row2, .row3, .row4, .row5 {
