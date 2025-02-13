@@ -33,7 +33,7 @@ footer {
 .first-row{
   display: grid;
   flex-wrap: flex;
-  grid-template-columns: 15% 90%;
+  grid-template-columns: 15% 85%;
   flex-direction: column;
   width: 100%;
   justify-content: center; /* Centre les éléments horizontalement */
@@ -401,7 +401,7 @@ h6{
 .product {
   background-color: #c3c7c3;
   padding: 2%;
-  height: width;
+  height: width×0.6;
   grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
    display: grid;
 }
