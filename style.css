@@ -419,12 +419,12 @@ h6{
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
   width: 100%; /* Prendre toute la largeur disponible */
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /* Deux colonnes égales */
+  grid-template-rows: 20% 20% 20% 15% 25%; /* Deux colonnes égales */
   display: grid;
 }
 
 .row1, .row2, .row3, .row4, .row5 {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .bouton5 {
