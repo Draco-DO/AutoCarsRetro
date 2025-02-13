@@ -33,7 +33,7 @@ footer {
 .first-row{
   display: grid;
   flex-wrap: flex;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 15% 90%;
   flex-direction: column;
   width: 100%;
   justify-content: center; /* Centre les éléments horizontalement */
@@ -419,6 +419,12 @@ h6{
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
   width: 100%; /* Prendre toute la largeur disponible */
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /* Deux colonnes égales */
+  display: grid;
+}
+
+.row1, .row2, .row3, .row4, .row5 {
+  padding: 1.5rem;
 }
 
 .bouton5 {
