@@ -410,6 +410,7 @@ h6{
   width: 100%; /* Largeur des images */
   height: 20rem; /* Hauteur des images */
   object-fit: contain; /* Ajustement de l'image à l'intérieur du cadre */
+  justify-content: center;
 }
 
 .product-description {
@@ -419,12 +420,12 @@ h6{
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
   width: 100%; /* Prendre toute la largeur disponible */
-  grid-template-rows: 20% 20% 20% 15% 25%; /* Deux colonnes égales */
+  grid-template-rows: 10% 10% 10% 10% 20%; /* Deux colonnes égales */
   display: grid;
 }
 
 .row1, .row2, .row3, .row4, .row5 {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .bouton5 {
