@@ -425,6 +425,8 @@ h6{
 
 .row1, .row2, .row3, .row4, .row5 {
   padding: 1.5rem;
+  width: 100%;
+  height: 100%;
 }
 
 .bouton5 {
