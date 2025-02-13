@@ -420,7 +420,7 @@ h6{
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
   width: 100%; /* Prendre toute la largeur disponible */
-  grid-template-rows: 10% 10% 10% 10% 20%; /* Deux colonnes égales */
+  grid-template-rows: 15% 15% 15% 15% 20%; /* Deux colonnes égales */
   display: grid;
 }
 
