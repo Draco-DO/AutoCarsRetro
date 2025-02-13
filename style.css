@@ -401,7 +401,7 @@ h6{
 .product {
   background-color: #c3c7c3;
   padding: 2%;
-  height: 20rem;
+  height: 30rem;
   grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
    display: grid;
 }
@@ -419,7 +419,7 @@ h6{
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
   width: 100%; /* Prendre toute la largeur disponible */
-  grid-template-rows: 4rem 4rem 4rem 4rem 4rem; /* Deux colonnes égales */
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /* Deux colonnes égales */
   display: grid;
 }
 
