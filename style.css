@@ -408,7 +408,7 @@ h6{
 
 .product img {
   width: 100%; /* Largeur des images */
-  height: 20rem; /* Hauteur des images */
+  height: auto; /* Hauteur des images */
   object-fit: contain; /* Ajustement de l'image à l'intérieur du cadre */
   justify-content: center;
 }
@@ -420,17 +420,13 @@ h6{
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
   width: 100%; /* Prendre toute la largeur disponible */
-  grid-template-rows: 15% 15% 15% 15% 20%; /* Deux colonnes égales */
+  grid-template-rows: 15% 15% 15% 15% 15%; /* Deux colonnes égales */
   display: grid;
   flex-wrap: wrap;
 }
 
-.row1, .row2, .row3, .row4, .row5 {
-  padding: 0.5rem;
-}
-
 .bouton5 {
-  padding: 1rem; /* Remplissage à l'intérieur du bouton */
+  padding: 0.5rem; /* Remplissage à l'intérieur du bouton */
   font-size: 1rem; /* Taille de la police */
   background-color: #0b2f5b; /* Couleur de fond du bouton */
   color: white; /* Couleur du texte du bouton */
