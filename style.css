@@ -401,7 +401,7 @@ h6{
 .product {
   background-color: #c3c7c3;
   padding: 2%;
-  height: 20rem;
+  height: 15rem;
   grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
    display: grid;
 }
