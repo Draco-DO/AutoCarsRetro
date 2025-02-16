@@ -46,7 +46,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 60% 10%;
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center;
   margin: 0 auto; /* Centrage horizontal de la galerie */
