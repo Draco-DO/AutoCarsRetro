@@ -34,7 +34,7 @@ footer {
   display: grid;
   flex-wrap: flex;
   grid-template-columns: 15% 85%;
-  height: 10%;
+  height: 5%;
   flex-direction: column;
   width: 100%;
   justify-content: center; /* Centre les éléments horizontalement */
