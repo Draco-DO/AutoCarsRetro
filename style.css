@@ -409,7 +409,7 @@ h6{
 }
 
 .product img {
-  width: 100%; /* Largeur des images */
+  width: auto; /* Largeur des images */
   height: 50%; /* Hauteur des images */
   object-fit: contain; /* Ajustement de l'image à l'intérieur du cadre */
   justify-content: center;
