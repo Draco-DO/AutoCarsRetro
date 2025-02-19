@@ -11,7 +11,7 @@ body, ul {
 }
 
 footer {
-  padding-top:15rem;
+  padding-top:10rem;
 }
 
 .image-responsive {
@@ -36,7 +36,6 @@ footer {
   grid-template-columns: 15% 85%;
   flex-direction: column;
   width: 100%;
-  height: 5%;
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center;
   margin: 0 auto; /* Centrage horizontal de la galerie */
@@ -58,6 +57,10 @@ h7{
     font-family: Playfair Display;
     font-weight: normal;
     font-size: 1rem;
+    opacity: 0; /* Cache le texte initialement */
+    transform: translateY(-50%); /* Déplace le texte vers la gauche en dehors de l'écran */
+    animation: slide-inY 1s ease forwards; /* Applique l'animation pour chaque élément */
+
 }
 
 section {
@@ -68,6 +71,7 @@ h1 {
   text-align: center;
   font-family: Calibri;
   opacity: 0; /* Cache le texte initialement */
+  transform: translateY(-50%); /* Déplace le texte vers la gauche en dehors de l'écran */
   animation: slide-inY 1s ease forwards; /* Applique l'animation pour chaque élément */
 }
 
@@ -105,9 +109,9 @@ p{
 
 /* Style de base pour la barre de menu */
 .menu {
-  margin-top: 10px;
   background-color: #faf9eb; /* Couleur de fond de la barre */
-  height: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu ul {
@@ -115,11 +119,11 @@ p{
   display: flex; /* Affiche les éléments en ligne */
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center;
+  text-align: center;
 }
 
 .menu ul li {
-  margin-right: 2.5%; /* Espacement entre les éléments du menu */
-  padding: 1%;
+  margin: 2%; /* Espacement entre les éléments du menu */
 }
 
 
@@ -391,7 +395,6 @@ h6{
 
 .gallery {
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: 1fr; /* Deux colonnes égales */
   grid-gap: 1.5%; /* Espacement entre les éléments */
   width: 95%;
@@ -405,25 +408,24 @@ h6{
   padding: 2%;
   height: 15rem;
   grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
-   display: grid;
+  display: grid;
 }
 
-.product img {
-  width: auto; /* Largeur des images */
-  height: 50%; /* Hauteur des images */
-  object-fit: contain; /* Ajustement de l'image à l'intérieur du cadre */
+.img img {
+  width: 100%; /* Hauteur des images */
+  height: 15rem;
+  object-fit: contain;  /* Ajustement de l'image à l'intérieur du cadre */
   justify-content: center;
 }
 
 .product-description {
-  display: flex;
+  display: grid;
   flex-direction: column; /* Les éléments (texte, bouton) empilés verticalement */
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
   width: 100%; /* Prendre toute la largeur disponible */
-  grid-template-rows: 15% 15% 15% 15% 15%; /* Deux colonnes égales */
-  display: grid;
+  grid-template-rows: 3rem 3rem 3rem 3rem 3rem; /* Deux colonnes égales */
 }
 
 .bouton5 {
@@ -459,29 +461,25 @@ h6{
 }
 
 .product2 {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centre les enfants horizontalement */
-  background-color: #c3c7c3;
-  padding-bottom: 10px;
-  padding-top: 20px;
-  height: 90%;
-}
+  display: grid;
 
-.product2 img {
-  width: 50%; /* Largeur des images */
-  height: auto; /* Hauteur des images */
-  object-fit: cover; /* Ajustement de l'image à l'intérieur du cadre */
-}
-
-.product-description2 {
-  display: flex;
   flex-direction: column; /* Les éléments (texte, bouton) empilés verticalement */
   justify-content: center; /* Centre les éléments horizontalement */
   align-items: center; /* Centre les éléments verticalement */
   text-align: center; /* Centre le texte à l'intérieur */
-  
+  width: 100%; /* Prendre toute la largeur disponible */
+  grid-template-rows: 15rem 5rem 5rem 5rem; /* Deux colonnes égales */
+  grid-gap: 1.5%; /* Espacement entre les éléments */
+  background-color: #c3c7c3;
+
+}
+
+.product2 img {
+  margin: 10%;
+  width: 80%; /* Largeur des images */
+  height: 10rem; /* Hauteur des images */
+  object-fit: contain; /* Ajustement de l'image à l'intérieur du cadre */
+  justify-content: center;
 }
 
 
